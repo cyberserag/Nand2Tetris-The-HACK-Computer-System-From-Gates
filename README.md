@@ -34,7 +34,7 @@ Throughout the process, I gained hands-on experience with core computer science 
 ### **Computer Software Hierarchy**
 
 6. **HACK Assembler** ✔️ Developed an assembler to translate symbolic machine language programs into binary executable code.
-7. **Virtual Machine I: Stack Arithmetic** ✔️ Built a stack-based virtual machine handling arithmetic and memory access operations, forming the backend of a two-tier compiler.
+7. **Virtual Machine I: Stack Arithmetic** ✔️ Built a stack-based virtual machine handling arithmetic and memory access operations, forming the backend of a two-tier compiler later to be designed.
 8. **Virtual Machine II: Program Control** ✔️ Completed the VM translator by implementing branching and function-calling commands, supporting program flow, loops, and stack-based function handling.
 9. **High-Level Language (JACK)** ✔️ Designed and implemented JACK, an object-based, Java-like language, supporting procedural and object-oriented programming, classes, methods, recursion, interactive applications (e.g., Hell Arena Game), and graphics optimization.
 10. **Compiler I: Syntax Analysis** ✔️ Built a two-tier compiler front-end for JACK. Implemented lexical analysis (tokenizing) and parsing, generating parse trees and XML representations to analyze program syntax.
