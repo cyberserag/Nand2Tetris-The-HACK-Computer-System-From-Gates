@@ -4,6 +4,7 @@
 The Nand to Tetris project is a fascinating journey into the foundations of computer systems, taking me from Boolean algebra and elementary logic gates all the way to building a complete general-purpose computer capable of running high-level programs.
 
 In the hardware phase, I construct the system from the ground up — designing the CPU, memory units, and overall architecture. Rather than using physical components, the entire computer is built and tested on my own machine through a hardware simulator, mirroring how modern computer engineers prototype real-world systems.
+
 In the software phase, I develop a full software hierarchy that enables the translation and execution of object-oriented, high-level programs on this minimal hardware platform. This includes implementing a virtual machine, a compiler for a simple Java-like language, and a basic operating system that bridges the gap between software and hardware.
 
 Throughout the process, I gain hands-on experience with core computer science concepts such as stack processing, parsing, code generation, memory management, vector graphics, input/output handling, and fundamental data structures and algorithms — all of which form up the backbone of modern computing systems.
