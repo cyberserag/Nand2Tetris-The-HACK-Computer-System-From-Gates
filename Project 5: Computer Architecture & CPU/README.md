@@ -13,7 +13,7 @@ Project 5 focused on **assembling these building blocks into a fully functional,
 
 ### **Hack Hardware Platform Overview**
 
-![image.png](attachment:1bdcf2d9-05a9-4f35-9859-a68b376d3d87:image.png)
+<img width="1057" height="481" alt="image" src="https://github.com/user-attachments/assets/5c8d47b0-93d9-418d-9f0d-5c6215ba606c" />
 
 The Hack computer is a **16-bit von Neumann machine**, comprising:
 
@@ -27,7 +27,7 @@ Programs reside in **instruction memory**, a read-only device, which can be prel
 
 ### **CPU Design and Abstraction**
 
-![image.png](attachment:957dc7ed-c1a7-4eeb-b725-a94c7ecf99b4:image.png)
+<img width="1225" height="629" alt="image" src="https://github.com/user-attachments/assets/fdc26a74-7dc6-4c0c-96a6-ebc451f6c661" />
 
 The **CPU** is the heart of the Hack platform. It executes **16-bit Hack instructions** and coordinates the computer’s operations. Its design integrates:
 
@@ -43,13 +43,12 @@ The CPU’s control logic ensures:
 
 By connecting these elements intelligently, the CPU could seamlessly execute Hack programs step by step, simulating the operations of a real computer at the hardware level.
 
-![image.png](attachment:5898cd15-5621-4acf-b6ae-8c899e8f79b8:image.png)
-
+<img width="1225" height="629" alt="image" src="https://github.com/user-attachments/assets/ed6b858b-4e18-4e38-b8de-a7cf7e0f574a" />
 ---
 
 ### **Memory Integration**
 
-![image.png](attachment:eac412aa-3886-4e99-969c-c7f14d5f4c43:image.png)
+<img width="821" height="557" alt="image" src="https://github.com/user-attachments/assets/fadd1291-0751-49a1-8120-4a1d8bdb9003" />
 
 **Instruction Memory (ROM)**
 
@@ -67,7 +66,7 @@ By connecting these elements intelligently, the CPU could seamlessly execute Hac
 
 ### **Computer Architecture & Integration**
 
-![image.png](attachment:6a20cc9c-7604-477f-9686-b455d1510074:image.png)
+<img width="1067" height="549" alt="image" src="https://github.com/user-attachments/assets/e554acf4-010b-48d0-8a27-d75aefbb19b9" />
 
 Once the **CPU and memory modules** were individually tested, assembling the overall Hack computer became straightforward:
 
