@@ -1,0 +1,56 @@
+class Target {
+  field int x,y;
+
+  constructor Target new(int Ax,int Ay){
+    let x = Ax;
+    let y = Ay;
+    do draw();
+    return this;
+
+  }  
+  /** Draws a 16x16 target wall sprite at the given (x,y) location. */
+method void draw() {
+    var int memAddr;
+    let memAddr = 16384 + (y * 32) + (x / 16);
+
+    // Row-by-row bitmap data for the target sprite
+    do Memory.poke(memAddr + 0, 384);
+	do Memory.poke(memAddr + 32, 384);
+	do Memory.poke(memAddr + 64, -1);
+	do Memory.poke(memAddr + 96, -32767);
+	do Memory.poke(memAddr + 128, -24583);
+	do Memory.poke(memAddr + 160, -28663);
+	do Memory.poke(memAddr + 192, -26647);
+	do Memory.poke(memAddr + 224, -27607);
+	do Memory.poke(memAddr + 256, -27223);
+	do Memory.poke(memAddr + 288, -27223);
+	do Memory.poke(memAddr + 320, -27607);
+	do Memory.poke(memAddr + 352, -26647);
+	do Memory.poke(memAddr + 384, -28663);
+	do Memory.poke(memAddr + 416, -24583);
+	do Memory.poke(memAddr + 448, -32767);
+	do Memory.poke(memAddr + 480, -1);
+    
+    return;
+}
+  method void erase(){
+    do Screen.setColor(false);
+    do Screen.drawRectangle(x-4,y,x+18,y+18);
+    return;
+
+  }
+  method void moveTarget(int newX,int newY){
+    do erase();
+    let x = newX;
+    let y = newY;
+    do draw();
+    return;
+  }
+  method int getX() { return x; }
+  method int getY() { return y; } 
+  method void dispose(){
+    do Memory.deAlloc(this);
+    return;
+  }
+
+}

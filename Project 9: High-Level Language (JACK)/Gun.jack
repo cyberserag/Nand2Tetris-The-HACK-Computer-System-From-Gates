@@ -1,0 +1,76 @@
+class Gun{
+  field int x,y; // the coordinates of the starting place of the Gun
+  constructor Gun new(int Ax,int Ay){
+    let x=Ax;
+    let y=Ay;
+    do draw();
+    return this;
+  }
+  method void draw() {
+    var int memAddress;
+    let memAddress = 16384 + (y * 32) + (x / 16);
+
+    do Memory.poke(memAddress + 0, 0);
+	do Memory.poke(memAddress + 32, 0);
+	do Memory.poke(memAddress + 64, 256);
+	do Memory.poke(memAddress + 96, 896);
+	do Memory.poke(memAddress + 128, 1984);
+	do Memory.poke(memAddress + 160, 4064);
+	do Memory.poke(memAddress + 192, 256);
+	do Memory.poke(memAddress + 224, 1984);
+	do Memory.poke(memAddress + 256, 2336);
+	do Memory.poke(memAddress + 288, 4368);
+	do Memory.poke(memAddress + 320, 8456);
+	do Memory.poke(memAddress + 352, 32764);
+	do Memory.poke(memAddress + 384, 256);
+	do Memory.poke(memAddress + 416, 896);
+	do Memory.poke(memAddress + 448, 1088);
+	do Memory.poke(memAddress + 480, 2080);
+
+    return;
+}
+
+   // Simple way to clear the 16x16 area
+  method void erase(){
+    do Screen.setColor(false);
+    do Screen.drawRectangle(x,y,x+15,y+15);
+    return;
+  }
+  method void moveRight(){
+    if (x<480){
+        do erase();
+        let x = x+16;
+        do draw();
+
+    }
+    return;
+  }
+  method void moveLeft(){
+    if (x>15){
+        do erase();
+        let x = x-16;
+        do draw();
+
+    }
+    return;
+  }
+  method void fire(){
+    do Screen.setColor(true);
+    // draw line from the middle of the gun offset [x+8] to the bottom of the shooting wall
+    do Screen.drawLine(x+8,y, x+8,51 );
+    do Sys.wait(50);
+    
+    
+    // erases the line after small time of waiting.
+    do Screen.setColor(false);
+    do Screen.drawLine(x+8,y, x+8,51 );
+
+    return;
+  }
+  method int getX() { return x; }
+  method void dispose(){
+    do Memory.deAlloc(this);
+    return;
+  }
+
+}
