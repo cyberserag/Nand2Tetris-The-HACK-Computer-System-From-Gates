@@ -7,7 +7,7 @@ In the hardware phase, I construct the system from the ground up — designing t
 
 In the software phase, I develop a full software hierarchy that enables the translation and execution of object-oriented, high-level programs on this minimal hardware platform. This includes implementing a virtual machine, a compiler for a simple Java-like language, and a basic operating system that bridges the gap between software and hardware.
 
-Throughout the process, I gain hands-on experience with core computer science concepts such as stack processing, parsing, code generation, memory management, vector graphics, input/output handling, and fundamental data structures and algorithms — all of which form up the backbone of modern computing systems.
+Throughout the process, I gained hands-on experience with core computer science concepts such as stack processing, parsing, code generation, memory management, vector graphics, input/output handling, and fundamental data structures and algorithms — all of which form up the backbone of modern computing systems.
 
 # What’s the big picture here?
 <img width="1071" height="738" alt="image" src="https://github.com/user-attachments/assets/342ff053-ca04-4d20-b272-f9fed122e6e2" />
@@ -33,11 +33,11 @@ Throughout the process, I gain hands-on experience with core computer science co
 
 ### **Computer Software Hierarchy**
 
-1. **HACK Assembler** ✔️ Developed an assembler to translate symbolic machine language programs into binary executable code.
-2. **Virtual Machine I: Stack Arithmetic** ✔️ Built a stack-based virtual machine handling arithmetic and memory access operations, forming the backend of a two-tier compiler.
-3. **Virtual Machine II: Program Control** ✔️ Completed the VM translator by implementing branching and function-calling commands, supporting program flow, loops, and stack-based function handling.
-4. **High-Level Language (JACK)** ✔️ Designed and implemented JACK, an object-based, Java-like language, supporting procedural and object-oriented programming, classes, methods, recursion, interactive applications (e.g., Hell Arena Game), and graphics optimization.
-5. **Compiler I: Syntax Analysis** ✔️ Built a two-tier compiler front-end for JACK. Implemented lexical analysis (tokenizing) and parsing, generating parse trees and XML representations to analyze program syntax.
-6. **Compiler II: Code Generation** ⏳ Finishing the full JACK compiler by generating VM code for procedural programs, arrays, and objects. Concepts: recursive compilation, symbol tables, memory management, and code generation techniques.
-7. **Operating System** ⏳ Implementing a simple, full operating system for the HACK computer.
+6. **HACK Assembler** ✔️ Developed an assembler to translate symbolic machine language programs into binary executable code.
+7. **Virtual Machine I: Stack Arithmetic** ✔️ Built a stack-based virtual machine handling arithmetic and memory access operations, forming the backend of a two-tier compiler.
+8. **Virtual Machine II: Program Control** ✔️ Completed the VM translator by implementing branching and function-calling commands, supporting program flow, loops, and stack-based function handling.
+9. **High-Level Language (JACK)** ✔️ Designed and implemented JACK, an object-based, Java-like language, supporting procedural and object-oriented programming, classes, methods, recursion, interactive applications (e.g., Hell Arena Game), and graphics optimization.
+10. **Compiler I: Syntax Analysis** ✔️ Built a two-tier compiler front-end for JACK. Implemented lexical analysis (tokenizing) and parsing, generating parse trees and XML representations to analyze program syntax.
+11. **Compiler II: Code Generation** ⏳ Finishing the full JACK compiler by generating VM code for procedural programs, arrays, and objects. Concepts: recursive compilation, symbol tables, memory management, and code generation techniques.
+12. **Operating System** ⏳ Implementing a simple, full operating system for the HACK computer.
 
