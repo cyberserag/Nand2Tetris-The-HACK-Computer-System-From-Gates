@@ -1,0 +1,303 @@
+// push argument 1
+@1
+D=A
+@ARG
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//pop pointer 1
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@THAT
+M=D
+// push 0
+@0
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //pop that 0
+@0
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+// push 1
+@1
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //pop that 1
+@1
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+// push argument 0
+@0
+D=A
+@ARG
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+// push 2
+@2
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //sub: pop y, pop x, push (x-y)
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=M-D
+M=D
+@SP
+M=M+1
+//pop argument 0
+@0
+D=A
+@ARG
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+//generating (LOOP)
+(LOOP)
+// push argument 0
+@0
+D=A
+@ARG
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//if-goto COMPUTE_ELEMENT
+@SP
+AM=M-1
+D=M
+@COMPUTE_ELEMENT
+D;JNE
+//goto END
+@END
+0;JMP
+//generating (COMPUTE_ELEMENT)
+(COMPUTE_ELEMENT)
+// push that 0
+@0
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+// push that 1
+@1
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//add: pop y, pop x, push x+y
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=D+M
+M=D
+@SP
+M=M+1     
+//pop that 2
+@2
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+//push pointer 1
+@THAT
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+// push 1
+@1
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //add: pop y, pop x, push x+y
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=D+M
+M=D
+@SP
+M=M+1     
+//pop pointer 1
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@THAT
+M=D
+// push argument 0
+@0
+D=A
+@ARG
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+// push 1
+@1
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //sub: pop y, pop x, push (x-y)
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=M-D
+M=D
+@SP
+M=M+1
+//pop argument 0
+@0
+D=A
+@ARG
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+//goto LOOP
+@LOOP
+0;JMP
+//generating (END)
+(END)
