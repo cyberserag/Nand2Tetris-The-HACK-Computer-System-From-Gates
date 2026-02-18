@@ -13,7 +13,8 @@ Project 5 focused on **assembling these building blocks into a fully functional,
 
 ### **Hack Hardware Platform Overview**
 
-<img width="1057" height="481" alt="image" src="https://github.com/user-attachments/assets/5c8d47b0-93d9-418d-9f0d-5c6215ba606c" />
+<img width="1225" height="629" alt="image" src="https://github.com/user-attachments/assets/689edc30-3085-49d8-a00e-0f24ae1cfe2b" />
+
 
 The Hack computer is a **16-bit von Neumann machine**, comprising:
 
@@ -27,7 +28,7 @@ Programs reside in **instruction memory**, a read-only device, which can be prel
 
 ### **CPU Design and Abstraction**
 
-<img width="1225" height="629" alt="image" src="https://github.com/user-attachments/assets/fdc26a74-7dc6-4c0c-96a6-ebc451f6c661" />
+<img width="1057" height="481" alt="image" src="https://github.com/user-attachments/assets/3ae8629c-5e4b-49a3-acba-3a5e50ba706d" />
 
 The **CPU** is the heart of the Hack platform. It executes **16-bit Hack instructions** and coordinates the computer’s operations. Its design integrates:
 
@@ -43,12 +44,14 @@ The CPU’s control logic ensures:
 
 By connecting these elements intelligently, the CPU could seamlessly execute Hack programs step by step, simulating the operations of a real computer at the hardware level.
 
-<img width="1225" height="629" alt="image" src="https://github.com/user-attachments/assets/ed6b858b-4e18-4e38-b8de-a7cf7e0f574a" />
+<img width="1155" height="655" alt="image" src="https://github.com/user-attachments/assets/da5557f7-2176-45f4-b9b7-d514defe7c5a" />
+
 ---
 
 ### **Memory Integration**
 
-<img width="821" height="557" alt="image" src="https://github.com/user-attachments/assets/fadd1291-0751-49a1-8120-4a1d8bdb9003" />
+<img width="821" height="557" alt="image" src="https://github.com/user-attachments/assets/165062bb-5f24-4c8c-95a5-708b25d6685c" />
+
 
 **Instruction Memory (ROM)**
 
@@ -66,7 +69,8 @@ By connecting these elements intelligently, the CPU could seamlessly execute Hac
 
 ### **Computer Architecture & Integration**
 
-<img width="1067" height="549" alt="image" src="https://github.com/user-attachments/assets/e554acf4-010b-48d0-8a27-d75aefbb19b9" />
+<img width="1067" height="549" alt="image" src="https://github.com/user-attachments/assets/04042b3a-8e97-4d61-8671-f12bde18ba5b" />
+
 
 Once the **CPU and memory modules** were individually tested, assembling the overall Hack computer became straightforward:
 
