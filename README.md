@@ -37,6 +37,6 @@ Throughout the process, I gain hands-on experience with core computer science co
 3. **Virtual Machine II: Program Control** ✔️ Completed the VM translator by implementing branching and function-calling commands, supporting program flow, loops, and stack-based function handling.
 4. **High-Level Language (JACK)** ✔️ Designed and implemented JACK, an object-based, Java-like language, supporting procedural and object-oriented programming, classes, methods, recursion, interactive applications (e.g., Hell Arena Game), and graphics optimization.
 5. **Compiler I: Syntax Analysis** ✔️ Built a two-tier compiler front-end for JACK. Implemented lexical analysis (tokenizing) and parsing, generating parse trees and XML representations to analyze program syntax.
-6. **Compiler II: Code Generation** ⏳ Finalizing the full JACK compiler by generating VM code for procedural programs, arrays, and objects. Concepts: recursive compilation, symbol tables, memory management, and code generation techniques.
+6. **Compiler II: Code Generation** ⏳ Finishing the full JACK compiler by generating VM code for procedural programs, arrays, and objects. Concepts: recursive compilation, symbol tables, memory management, and code generation techniques.
 7. **Operating System** ⏳ Implementing a simple, full operating system for the HACK computer.
 
