@@ -1,0 +1,166 @@
+// push 3030
+@3030
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //pop pointer 0
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@THIS
+M=D
+// push 3040
+@3040
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //pop pointer 1
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@THAT
+M=D
+// push 32
+@32
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //pop this 2
+@2
+D=A
+@THIS
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+// push 46
+@46
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+    //pop that 6
+@6
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@R13
+A=M
+M=D
+//push pointer 0
+@THIS
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//push pointer 1
+@THAT
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//add: pop y, pop x, push x+y
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=D+M
+M=D
+@SP
+M=M+1     
+// push this 2
+@2
+D=A
+@THIS
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//sub: pop y, pop x, push (x-y)
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=M-D
+M=D
+@SP
+M=M+1
+// push that 6
+@6
+D=A
+@THAT
+D=D+M
+@R13
+M=D
+@R13
+A=M
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+//add: pop y, pop x, push x+y
+@SP
+M=M-1
+@SP
+A=M
+D=M
+@SP
+M=M-1
+@SP
+A=M
+D=D+M
+M=D
+@SP
+M=M+1     
